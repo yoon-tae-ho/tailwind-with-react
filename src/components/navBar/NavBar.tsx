@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from "./Logo";
 import MobileMenuButton from "./MobileMenuButton";
 import NavItem from "./NavItem";
 import NavSubItem from "./NavSubItem";
@@ -10,14 +11,9 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`sticky top-0 left-0 w-full flex justify-between ${gradientClass}`}
+      className={`sticky top-0 left-0 z-10 w-full flex justify-between ${gradientClass}`}
     >
-      <div className="flex items-center p-2">
-        <img src="/images/logo-inverted.png" alt="logo-inverted" width="50" />
-        <h1 className="text-2xl ml-2 font-bold">
-          tw:<span className="text-sky-900">mf</span>
-        </h1>
-      </div>
+      <Logo />
       {/* NavItems on Mobile */}
       <div className="relative flex md:hidden">
         <MobileMenuButton
