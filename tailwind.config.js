@@ -1,8 +1,10 @@
+const openVariant = require("./plugins/openVariant.ts");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [openVariant],
 };
